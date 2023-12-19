@@ -21,8 +21,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Create a Domain Controller (DC) Windows Server and configure a static NIC Private IP Address and Create a client VM (Windows 10) set on the same VNET
 - Verify Connectivity between the DC and the client VM within the VNET
-- Install and configure AD DS on the Windows Server to create a domain; Provision administrative users
-- Join the Windows 10 client VM to the domain; configure non-administrative users 
+- Install and configure AD DS on the DC to create a domain; Create and provision administrative users
+- Join the client VM to the domain; reate and configure non-administrative users
 
 
 <h2>Deployment and Configuration Steps</h2>
