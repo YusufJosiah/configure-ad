@@ -15,38 +15,38 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
-- Windows 10 (21H2)
+- Windows 10 (22H2)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Create a Domain Controller (DC) Windows Server and configure a static NIC Private IP Address and Create a client VM (Windows 10) set on the same VNET
-- Verify Connectivity between the DC and the client VM within the VNET
-- Install and configure AD DS on the DC to create a domain; Create and provision administrative users
-- Join the client VM to the domain; reate and configure non-administrative users
+1. Create a Domain Controller (DC) Windows Server and configure a static NIC Private IP a.ddress. Create a client virtual machine (VM) (Windows 10) set it on the same virtual network (VNET) as the DC.
+2. Verify Connectivity between the DC and the client VM within the VNET using the ping protocol.
+3. Install and configure Active Directory Domain Serivices (AD DS) on the DC to create a domain. Then create and provision administrative users.
+3. Join the client VM to the domain; create and configure non-administrative users
 
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/932xy1H.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To set the Domain Controller's NIC’s private IP address to be static, Navigate to the Domain Controller's network settings, access the IP configuration, and change the IP configuration from dynamic (DHCP) to static. Save the change.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/CGLg2M2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Long into (DC-1) using the RDP. Access the server manager and install Active Directory Services. The click on promote to domain controller to finish installing the active directory. Then log back in using domain-name\user and the password.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/4H9d8wC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+As can be seen in the picture above, using AD, administrators can create, manage, and organize users, groups, and computers, simplifying the process of assigning permissions and access rights. AD provides a centralized database to authenticate and authorize users and computers in a Windows domain network. AD allows administrators to enforce security settings and policies across the network using Group Policy Objects (GPOs). These policies can define access controls, password policies, software installation rules, and more.
 </p>
 <br />
