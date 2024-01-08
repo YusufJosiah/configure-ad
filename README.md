@@ -18,6 +18,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows 10 (22H2)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
+Organizations utilize Microsoft Active Directory (AD) to manage computers, users, and applications on their network. AD enables efficient administration through features like single sign-on, group policy management, and facilitates secure access control to resources within the network environment. AD is deployed and configured in Azure following the steps:
 
 1. Create a Domain Controller (DC) Windows Server and configure a static NIC Private IP a.ddress. Create a client virtual machine (VM) (Windows 10) set it on the same virtual network (VNET) as the DC.
 2. Verify Connectivity between the DC and the client VM within the VNET using the ping protocol.
